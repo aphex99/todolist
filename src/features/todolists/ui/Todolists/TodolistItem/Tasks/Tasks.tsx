@@ -46,8 +46,8 @@ export const Tasks = ({ todolist }: Props) => {
               task={task} todolist={todolist} />)}
           </List>
 
-          {data?.totalCount > COUNT_PER_PAGE &&
-            <TasksPagination totalCount={data?.totalCount || 0} page={page} setPage={setPage} />}
+          {data && data.totalCount > COUNT_PER_PAGE ?
+            <TasksPagination totalCount={data?.totalCount || 0} page={page} setPage={setPage} /> : null}
         </>
       )}
     </>

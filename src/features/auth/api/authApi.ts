@@ -1,6 +1,6 @@
-import { baseApi } from "@/app/baseApi.ts";
-import type { BaseResponse } from "@/common/types";
-import type { LoginInputs } from "@/features/auth/lib/schemas";
+import { baseApi } from "@/app/baseApi.ts"
+import type { BaseResponse } from "@/common/types"
+import type { LoginInputs } from "@/features/auth/lib/schemas"
 
 export const authApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
@@ -21,10 +21,9 @@ export const authApi = baseApi.injectEndpoints({
       query: () => ({
         url: "security/get-captcha-url",
         headers: { "Content-Type": "application/json" }
-      }),
-      invalidatesTags: ["Security"]
+      })
     })
   })
-});
+})
 
-export const { useLoginMutation, useLogoutMutation, useMeQuery, useGetCaptchaQuery } = authApi;
+export const { useLoginMutation, useLogoutMutation, useMeQuery, useGetCaptchaQuery } = authApi

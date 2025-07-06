@@ -55,7 +55,7 @@ export const Login = () => {
         reset();
       }
       if (res.data?.resultCode === ResultCode.CaptchaError) {
-        dispatch(setIsCaptchaAC({ captchaIsRequired: true }));
+        dispatch(setIsCaptchaAC({ isCaptcha: true }));
       }
     });
   };

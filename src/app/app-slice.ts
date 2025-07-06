@@ -48,7 +48,7 @@ export const appSlice = createSlice({
       state.isLoggedIn = action.payload.isLoggedIn;
     }),
     setIsCaptchaAC: create.reducer<{ isCaptcha: boolean }>((state, action) => {
-      state.captchaIsRequired = action.payload.captchaIsRequired;
+      state.captchaIsRequired = action.payload.isCaptcha;
     })
   })
 });
