@@ -9,8 +9,8 @@
         "build": "tsc -b && vite build",
         "test": "vitest",
         "preview": "vite preview",
-        "predeploy": "pnpm run build",
-        "deploy": "gh-pages -d build"
+        "predeploy": "pnpm run dist",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@emotion/react": "11.14.0",
