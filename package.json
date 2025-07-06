@@ -1,7 +1,7 @@
 {
     "name": "todolist-20",
     "private": true,
-    "homepage": "https://aphex99.github.io/todolist",
+    "homepage": "https://aphex99.github.io",
     "version": "0.1.0",
     "type": "module",
     "scripts": {
