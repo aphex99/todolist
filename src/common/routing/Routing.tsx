@@ -6,9 +6,9 @@ import { Login } from "@/features/auth/ui/Login/Login"
 import { Route, Routes } from "react-router"
 
 export const Path = {
-  Main: "/",
+  Main: "/todolist",
   Login: "login",
-  NotFound: "*",
+  NotFound: "*"
 } as const
 
 export const Routing = () => {
