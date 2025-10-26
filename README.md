@@ -1,5 +1,6 @@
 # Tasks Manager
 Веб-приложение для управления задачами
+
 **Стек:** TypeScript, React, Redux Toolkit, RTK Query, REST API, Material UI.  
 
 **Основные функции:**
